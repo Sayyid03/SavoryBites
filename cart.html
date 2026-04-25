@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+
+    <style>
+      /* CART PAGE */
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      h1 {
+        text-align: center;
+        margin: 20px 0;
+      }
+
+      #cart-items {
+        list-style: none;
+        padding: 0;
+        width: 80%;
+        margin: auto;
+      }
+
+      #cart-items li {
+        background: #fff;
+        margin-bottom: 10px;
+        padding: 15px;
+        border-radius: 8px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      /* BUTTONS */
+      #cart-items button {
+        margin-left: 5px;
+        padding: 5px 10px;
+        border: none;
+        cursor: pointer;
+      }
+
+      #clear-cart {
+        display: block;
+        margin: 20px auto;
+        padding: 10px 20px;
+        background: red;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+
+      #total {
+        font-weight: bold;
+      }
+
+      /* EMPTY MESSAGE */
+      #empty-message {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      #empty-message a * {
+        /* background-color: #ff6b35; */
+        color: #b10505;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Your Cart</h1>
+
+    <ul id="cart-items"></ul>
+
+    <h3>Total: ₦<span id="total">0</span></h3>
+
+    <button id="clear-cart">Delete All Cart</button>
+
+    <p id="empty-message"></p>
+
+    <script src="cart.js"></script>
+  </body>
+</html>

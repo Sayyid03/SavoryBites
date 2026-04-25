@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SavoryBites</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ===== NAVBAR ===== -->
+    <header class="header">
+      <nav class="navbar">
+        <!-- LEFT -->
+        <div class="logo">SavoryBites</div>
+
+        <!-- CENTER -->
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+
+        <!-- RIGHT -->
+        <div class="nav-right">
+          <div class="cart-icon" id="cart-toggle">
+            <a href="cart.html"
+              ><i class="fas fa-cart-shopping"></i> <span id="cart-count"></span
+            ></a>
+          </div>
+          <div class="hamburger" id="hamburger">☰</div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Delicious Food Delivered To You</h1>
+        <p>Order your favorite meals anytime, anywhere.</p>
+        <button class="btn">Order Now</button>
+      </div>
+
+      <!-- <div class="hero-image">
+        <img src="" alt="Delicious food" />
+      </div> -->
+    </section>
+
+    <!-- ===== FOOD MENU ===== -->
+    <section class="menu">
+      <h2 class="section-title">Popular Dishes</h2>
+
+      <div class="menu-grid">
+        <!-- CARD 1 -->
+        <div class="food-card">
+          <img src="images/jollof rice.jpg" loading="lazy" alt="" />
+          <h3>Jollof Rice</h3>
+          <p>₦2,500</p>
+          <button
+            class="btn add-to-cart"
+            data-name="Jollof Rice"
+            data-price="2500"
+          >
+            Add to Cart
+          </button>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="food-card">
+          <img src="images/fried rice.jpg" loading="lazy" alt="" />
+          <h3>Fried Rice</h3>
+          <p>₦2,800</p>
+          <button
+            class="btn add-to-cart"
+            data-name="Fried Rice"
+            data-price="2800"
+          >
+            Add to Cart
+          </button>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="food-card">
+          <img src="images/pizza.jpg" loading="lazy" alt="" />
+          <h3>Pizza</h3>
+          <p>₦4,000</p>
+          <button class="btn add-to-cart" data-name="Pizza" data-price="4000">
+            Add to Cart
+          </button>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="food-card">
+          <img src="images/shawarma.jpg" loading="lazy" alt="" />
+          <h3>Chicken Shawarma</h3>
+          <p>₦4,200</p>
+          <button
+            class="btn add-to-cart"
+            data-name="Chicken Shawarma"
+            data-price="4200"
+          >
+            Add to Cart
+          </button>
+        </div>
+
+        <!-- CARD 5 -->
+        <div class="food-card">
+          <img src="images/burger.jpg" loading="lazy" alt="" />
+          <h3>Chicken Burger & Fries</h3>
+          <p>₦5,200</p>
+          <button
+            class="btn add-to-cart"
+            data-name="Chicken Burger & Fries"
+            data-price="5200"
+          >
+            Add to Cart
+          </button>
+        </div>
+
+        <!-- CARD 6 -->
+        <div class="food-card">
+          <img src="images/chicken and chips.jpg" loading="lazy" alt="" />
+          <h3>Chips & Chicken</h3>
+          <p>₦4,700</p>
+          <button
+            class="btn add-to-cart"
+            data-name="Chips & Chicken"
+            data-price="4700"
+          >
+            Add to Cart
+          </button>
+        </div>
+
+        <!-- CARD 7 -->
+        <div class="food-card">
+          <img src="images/noodles.jpg" loading="lazy" alt="" />
+          <h3>Noodles</h3>
+          <p>₦2,500</p>
+          <button class="btn add-to-cart" data-name="Noodles" data-price="2500">
+            Add to Cart
+          </button>
+        </div>
+
+        <!-- CARD 8 -->
+        <div class="food-card">
+          <img src="" alt="yy" />
+          <h3>Yam & Sauce</h3>
+          <p>₦2,000</p>
+          <button
+            class="btn add-to-cart"
+            data-name="Yam & Sauce"
+            data-price="2000"
+          >
+            Add to Cart
+          </button>
+        </div>
+      </div>
+
+      <div class="view-all">
+        <button class="btn">View Full Menu</button>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="about">
+      <div class="about-content">
+        <h2>About Us</h2>
+        <p>
+          We deliver fresh and tasty meals from the best restaurants straight to
+          your doorstep.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== HOW IT WORKS ===== -->
+    <section class="steps">
+      <h2 class="section-title">Order in 4 Easy Steps</h2>
+
+      <div class="steps-grid">
+        <div class="step-card">
+          <h3>Browse Menu</h3>
+          <p>Explore a variety of delicious meals.</p>
+        </div>
+
+        <div class="step-card">
+          <h3>Place Order</h3>
+          <p>Select your favorite food and order easily.</p>
+        </div>
+
+        <div class="step-card">
+          <h3>Track Delivery</h3>
+          <p>Know exactly where your order is.</p>
+        </div>
+
+        <div class="step-card">
+          <h3>Enjoy Meal</h3>
+          <p>Sit back and enjoy your delicious food.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section class="testimonials">
+      <h2 class="section-title">What Our Customers Say</h2>
+
+      <div class="testimonial-wrapper">
+        <div class="testimonial-track">
+          <!-- ORIGINAL 6 -->
+          <div class="testimonial">"Amazing food!" - Ahmad</div>
+          <div class="testimonial">"Fast delivery!" - Sarah</div>
+          <div class="testimonial">"Loved it!" - Musa</div>
+          <div class="testimonial">"Very tasty meals!" - Zainab</div>
+          <div class="testimonial">"Best app ever!" - David</div>
+          <div class="testimonial">"Highly recommend!" - Aisha</div>
+
+          <!-- DUPLICATE SAME 6 -->
+          <div class="testimonial">"Amazing food!" - Ahmad</div>
+          <div class="testimonial">"Fast delivery!" - Sarah</div>
+          <div class="testimonial">"Loved it!" - Musa</div>
+          <div class="testimonial">"Very tasty meals!" - Zainab</div>
+          <div class="testimonial">"Best app ever!" - David</div>
+          <div class="testimonial">"Highly recommend!" - Aisha</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== DOWNLOAD APP ===== -->
+    <section class="download">
+      <div class="download-content">
+        <h2>Download Our App</h2>
+        <p>Get your food faster and easier on our mobile app.</p>
+
+        <div class="download-buttons">
+          <button class="btn">Google Play</button>
+          <button class="btn">App Store</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <div class="footer-content">
+        <p>&copy; 2026 SavoryBites. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
