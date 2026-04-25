@@ -11,6 +11,78 @@
         font-family: Arial, sans-serif;
       }
 
+      .header {
+        background: var(--light);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        height: 70px;
+      }
+
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 10%;
+      }
+
+      .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: var(--primary);
+      }
+
+      .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+      }
+
+      .nav-right {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+      }
+
+      .nav-right i {
+        color: var(--primary);
+      }
+
+      .nav-links a {
+        text-decoration: none;
+        color: var(--dark);
+        transition: 0.3s;
+      }
+
+      .nav-links a:hover {
+        color: var(--primary);
+      }
+
+      .cart-icon {
+        position: relative;
+        font-size: 20px;
+        cursor: pointer;
+      }
+
+      #cart-count {
+        position: absolute;
+        top: -8px;
+        right: -10px;
+        background: red;
+        color: #fff;
+        font-size: 12px;
+        padding: 2px 6px;
+        border-radius: 50%;
+        margin-left: 5px;
+      }
+
+      .cart-section {
+        padding: 100px 0;
+      }
+
       h1 {
         text-align: center;
         margin: 20px 0;
@@ -69,15 +141,42 @@
     </style>
   </head>
   <body>
-    <h1>Your Cart</h1>
+    <header class="header">
+      <nav class="navbar">
+        <!-- LEFT -->
+        <div class="logo">SavoryBites</div>
 
-    <ul id="cart-items"></ul>
+        <!-- CENTER -->
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
 
-    <h3>Total: ₦<span id="total">0</span></h3>
+        <!-- RIGHT -->
+        <div class="nav-right">
+          <div class="cart-icon" id="cart-toggle">
+            <a href="cart.html"
+              ><i class="fas fa-cart-shopping"></i> <span id="cart-count"></span
+            ></a>
+          </div>
+          <div class="hamburger" id="hamburger">☰</div>
+        </div>
+      </nav>
+    </header>
 
-    <button id="clear-cart">Delete All Cart</button>
+    <div class="cart-section">
+      <h1>Your Cart</h1>
 
-    <p id="empty-message"></p>
+      <ul id="cart-items"></ul>
+
+      <h3>Total: ₦<span id="total">0</span></h3>
+
+      <button id="clear-cart">Delete All Cart</button>
+
+      <p id="empty-message"></p>
+    </div>
 
     <script src="cart.js"></script>
   </body>
